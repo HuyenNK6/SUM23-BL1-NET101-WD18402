@@ -25,7 +25,7 @@ namespace BAI_3_NHAP_XUAT
 
             Console.WriteLine("==========NHẬP==========");
             Console.WriteLine("Nhập tên NYC: ");
-            string ten= Console.ReadLine();
+            string ten = Console.ReadLine();
             Console.WriteLine("Nhập tuổi NYC: ");
             //int tuoi= Console.ReadLine(); =>LỖI
             //vì Console.ReadLine(); => trả về string
@@ -35,14 +35,39 @@ namespace BAI_3_NHAP_XUAT
             Console.WriteLine("==========XUẤT==========");
             Console.WriteLine($"NYC tên là: {ten}");
             Console.WriteLine($"Tuổi NYC là: {tuoi}");
+
+            ///////BTVN////////
+            Console.WriteLine("==========NHẬP==========");
+            Console.WriteLine("Nhập tên hãng trà sữa: ");
+            string tenTS = Console.ReadLine();
+            Console.WriteLine("Nhập vị trà sữa: ");
+            string vi = Console.ReadLine();
+            Console.WriteLine("Nhập giá trà sữa: ");
+            //int gia = Convert.ToInt32(Console.ReadLine());
+            double gia = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Nhập số lượng trà sữa: ");
+            int soLuong = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("==========XUẤT==========");
+            Console.WriteLine($"Tên TS: {tenTS}");
+            Console.WriteLine($"Vị: {vi}");
+            Console.WriteLine($"gia: {gia}");
+            Console.WriteLine($"số lượng: {soLuong}");
+
+            ///////////////
+            Console.WriteLine("Nhập mã môn học: ");
+            int ma = Console.Read();
+            Console.WriteLine($"mã= {ma}");
+
+            //Console.ReadKey(); //tạm dừng output
         }
     }
 }
-/*BTVN:
+/* BTVN:
  * Nhập và xuất thông tin của Trà sữa NYC thích ra màn hình:
  * - Tên hãng trà sữa: string
  * - Vị : string
  * - Size: string
- * - Giá: int
+ * - Giá: int/double
  * - Số lượng: int
  */
