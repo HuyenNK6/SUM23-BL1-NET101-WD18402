@@ -57,6 +57,12 @@ namespace BAI_5_CAU_TRUC_RE_NHANH
                 Console.WriteLine("Mua kia morning");
 
             }
+
+            //////
+            Console.WriteLine("Nhập giới tính (1- đực/ 2- cái): ");
+            int gioiTinh = Convert.ToInt32(Console.ReadLine());
+            ////
+            Console.WriteLine($"Giới tính: {(gioiTinh == 1 ? "Đực": "Cái")}");
         }
     }
 }
