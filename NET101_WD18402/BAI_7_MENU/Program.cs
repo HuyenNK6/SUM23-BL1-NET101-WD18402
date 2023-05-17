@@ -60,6 +60,24 @@ namespace BAI_7_MENU
             //In ra số ngày trong tháng => switch case
             //nếu tháng 2 => kiểm tra năm nhuận
             //xem lại điều kiện năm nhuận
+            /*
+             * case 1:
+             * case 3:
+             * case 5: 
+             * ...
+             * case 12:
+             * => tháng có 31 ngày
+             * case 4:
+             * case 6:
+             * ....
+             * case 11:
+             * => tháng có 30 ngày
+             * 
+             * case 2:
+             * => năm nhuận:
+             * - TH1: chia hết cho 100 & chia hết cho 400
+             * - TH2: ko chia chia hết cho 100 -> phải chia hết cho 4
+             */
         }
     }
     //nếu quan tâm: nhập ngày hiện tại
