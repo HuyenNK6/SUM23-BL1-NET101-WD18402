@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_8_MANG", "BAI_8_MANG\BA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_8_MANG_P2", "BAI_8_MANG_P2\BAI_8_MANG_P2.csproj", "{8157BAE9-9B49-4D2E-896A-DECE12B57EED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_9_OOP", "BAI_9_OOP\BAI_9_OOP.csproj", "{134A223E-F43F-410E-B053-B270DE5C64C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{8157BAE9-9B49-4D2E-896A-DECE12B57EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8157BAE9-9B49-4D2E-896A-DECE12B57EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8157BAE9-9B49-4D2E-896A-DECE12B57EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{134A223E-F43F-410E-B053-B270DE5C64C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{134A223E-F43F-410E-B053-B270DE5C64C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{134A223E-F43F-410E-B053-B270DE5C64C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{134A223E-F43F-410E-B053-B270DE5C64C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
