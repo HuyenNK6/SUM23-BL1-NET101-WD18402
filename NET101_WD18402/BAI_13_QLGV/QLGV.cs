@@ -74,18 +74,105 @@ namespace BAI_13_QLGV
         {
             //min- max 
             // số giờ >= min và <= max
+            Console.WriteLine("Nhập số giờ dạy min= ");
+            double min = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Nhập số giờ dạy max= ");
+            double max = Convert.ToDouble(Console.ReadLine());
+            int count = 0;
+            for (int i = 0; i < _lstGV.Count; i++)
+            {
+                if (_lstGV[i].SoGioDay >= min &&
+                        _lstGV[i].SoGioDay <= max)
+                {
+                    _lstGV[i].InThongTin();
+                    count++;//nếu tìm thấy thì tăng count 1 đơn vị
+                }
+            }
+            if(count == 0)
+            {
+                Console.WriteLine("Không tìm thấy!!");
+            }
+            else
+            {
+                Console.WriteLine($"Có {count} GV có số giờ dạy trong khoảng" +
+                                  $" từ {min} đến {max}");
+            }
         }
         public void Xoa()
         {
-
+            Console.WriteLine("Nhập id cần xóa: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+            //for tab
+            for (int i = 0; i < _lstGV.Count; i++)
+            {
+                //tìm kiếm
+                if (_lstGV[i].Id == id)
+                {
+                    _lstGV[i].InThongTin();//vì chỉ có 1 thôi
+                    _lstGV.RemoveAt(i);//xóa đối tượng tại vị trí i
+                    Console.WriteLine("Đã xóa thành công !!!!");
+                    return; //nếu tìm thấy thì thoát luôn
+                }
+            }
+            //foreach (var gv in _lstGV)
+            //{
+            //    if(gv.Id == id)
+            //    {
+            //        _lstGV.Remove(gv);
+            //        return;
+            //    }
+            //}
+            Console.WriteLine("Không tìm thấy!!");
         }
         public void Sua()
         {
-
+            //tìm GV có id nhập từ bàn phím -> sửa số giờ dạy
+            Console.WriteLine("Nhập id cần sửa thông tin: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+            //for tab
+            for (int i = 0; i < _lstGV.Count; i++)
+            {
+                //tìm kiếm
+                if (_lstGV[i].Id == id)
+                {
+                    //trước
+                    _lstGV[i].InThongTin();
+                    Console.WriteLine("Nhập số giờ dạy mới= ");
+                    //cập nhật lại số giờ
+                    _lstGV[i].SoGioDay= Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Số giờ dạy đã sửa thành công!!");
+                    //sau
+                    _lstGV[i].InThongTin();
+                    return; 
+                }
+            }
+            Console.WriteLine("Không tìm thấy!!");
         }
         public void SapXep()
         {
-            
+            //sắp xếp theo số giờ dạy
+            //cách 1: ko làm thay đổi ds gốc
+            //biểu thức lambda
+            // tham số => biểu thức
+            // => là toán tử lambda
+            //x là tham số đại diện cho đối tượng GV trong list
+            Console.WriteLine("C1: Tăng dần");
+            foreach (var item in _lstGV.OrderBy(x => x.SoGioDay))
+            {
+                item.InThongTin();
+            }
+            Console.WriteLine("C1: Giảm dần");
+            foreach (var item in _lstGV.OrderByDescending(x => x.SoGioDay))
+            {
+                item.InThongTin();
+            }
+            //cách 2: làm thay đổi ds gốc
+            Console.WriteLine("C2: Tăng dần");
+            _lstGV = _lstGV.OrderBy(gv => gv.SoGioDay).ToList();
+            XuatDS(); 
+            Console.WriteLine("C2: Giảm dần");
+            _lstGV = _lstGV.OrderByDescending(gv => gv.SoGioDay).ToList();
+            XuatDS(); 
         }
     }
     

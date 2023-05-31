@@ -41,10 +41,19 @@ namespace BAI_13_QLGV
                         ql.XuatDS();
                         break;
                     case 3:
-                       
+                        ql.TimKiemTheoKhoang();
                         break;
                     case 4:
                         ql.TimKiemTheoID();
+                        break;
+                    case 5:
+                        ql.Xoa();
+                        break;
+                    case 6:
+                        ql.Sua();
+                        break;
+                    case 7:
+                        ql.SapXep();
                         break;
                     case 0:
                         Environment.Exit(0);
