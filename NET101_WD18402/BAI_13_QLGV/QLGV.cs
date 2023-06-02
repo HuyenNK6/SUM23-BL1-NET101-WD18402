@@ -174,6 +174,12 @@ namespace BAI_13_QLGV
             _lstGV = _lstGV.OrderByDescending(gv => gv.SoGioDay).ToList();
             XuatDS(); 
         }
+
+        public void KeThua()
+        {
+            GiaoVienPoly gvPoly = new GiaoVienPoly(66, "Minh", 40, "PTPM");
+            gvPoly.InThongTin();
+        }
     }
     
 }

@@ -28,6 +28,7 @@ namespace BAI_13_QLGV
                 Console.WriteLine("5. Xóa theo id");
                 Console.WriteLine("6. Sửa theo id");
                 Console.WriteLine("7. Sắp xếp theo số giờ dạy");
+                Console.WriteLine("8. Kế thừa");
                 Console.WriteLine("0. Thoát CT");
                 Console.WriteLine("--------------");
                 Console.WriteLine("-----Mời chọn: ");
@@ -54,6 +55,9 @@ namespace BAI_13_QLGV
                         break;
                     case 7:
                         ql.SapXep();
+                        break;
+                    case 8:
+                        ql.KeThua();
                         break;
                     case 0:
                         Environment.Exit(0);

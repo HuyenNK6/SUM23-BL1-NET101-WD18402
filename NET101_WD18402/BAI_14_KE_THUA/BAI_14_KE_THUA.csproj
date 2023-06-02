@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6E301184-274B-46A8-8E55-0C3555ED7172}</ProjectGuid>
+    <ProjectGuid>{7B6729C4-B313-4FCD-9C00-3358E2FAAA18}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BAI_13_QLGV</RootNamespace>
-    <AssemblyName>BAI_13_QLGV</AssemblyName>
+    <RootNamespace>BAI_14_KE_THUA</RootNamespace>
+    <AssemblyName>BAI_14_KE_THUA</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GiaoVien.cs" />
-    <Compile Include="GiaoVienPoly.cs" />
+    <Compile Include="GiangVien.cs" />
+    <Compile Include="Nguoi.cs" />
+    <Compile Include="NhanVien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLGV.cs" />
+    <Compile Include="SinhVien.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

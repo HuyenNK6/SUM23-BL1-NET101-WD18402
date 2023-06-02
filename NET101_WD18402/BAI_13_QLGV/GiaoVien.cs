@@ -27,7 +27,7 @@ namespace BAI_13_QLGV
         public string Ten { get => ten; set => ten = value; }
         public double SoGioDay { get => soGioDay; set => soGioDay = value; }
     
-        public void InThongTin()
+        public virtual void InThongTin()
         {
             Console.WriteLine($"{id}| {ten}| {soGioDay}");
         }
