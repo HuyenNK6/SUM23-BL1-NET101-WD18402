@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_13_QLGV", "BAI_13_QLGV\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_14_KE_THUA", "BAI_14_KE_THUA\BAI_14_KE_THUA.csproj", "{7B6729C4-B313-4FCD-9C00-3358E2FAAA18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_15_CHUOI_REGEX", "BAI_15_CHUOI_REGEX\BAI_15_CHUOI_REGEX.csproj", "{03B312D0-4C8E-400D-BFD2-3A51DD61AAFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{7B6729C4-B313-4FCD-9C00-3358E2FAAA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B6729C4-B313-4FCD-9C00-3358E2FAAA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B6729C4-B313-4FCD-9C00-3358E2FAAA18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03B312D0-4C8E-400D-BFD2-3A51DD61AAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03B312D0-4C8E-400D-BFD2-3A51DD61AAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03B312D0-4C8E-400D-BFD2-3A51DD61AAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03B312D0-4C8E-400D-BFD2-3A51DD61AAFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
